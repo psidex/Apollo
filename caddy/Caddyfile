@@ -9,13 +9,6 @@ simonj.dev {
   reverse_proxy gostatic:8043
 }
 
-psm.simonj.dev {
-  log {
-    output file /var/log/caddy/psm.simonj.dev.access.log
-  }
-  reverse_proxy psmserver:8080
-}
-
 messenger.simonj.dev {
   log {
     output file /var/log/caddy/messenger.simonj.dev.access.log

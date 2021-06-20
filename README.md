@@ -11,6 +11,5 @@ Server Stack:
     - [Docker](https://www.docker.com/)
       - [Ouroboros](https://github.com/pyouroboros/ouroboros)
       - [Caddy](https://caddyserver.com/) as a reverse proxy with https
-        - [psm](https://psm.simonj.dev)
         - [messenger stats](https://messenger.simonj.dev)
         - [goStatic](https://github.com/PierreZ/goStatic) serving `site/public`

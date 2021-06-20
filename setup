@@ -56,18 +56,12 @@ sudo apt install docker-ce docker-ce-cli containerd.io -y
 # Setup Docker stuff.
 docker network create proxynet
 docker volume create caddy
-docker volume create psmdata
 
 # Start Docker stuff.
 docker run -d --name gostatic --restart unless-stopped \
     -v $(pwd)/site/public:/srv/http \
     --network proxynet \
     pierrezemb/gostatic
-
-docker run -d --name psmserver \
-    --network proxynet \
-    -v psmdata:/data \
-    psidex/portsmouthshippingmovements
 
 docker run -d --name msserver \
     --network proxynet \
