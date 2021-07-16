@@ -9,7 +9,8 @@ Server Stack:
     - [UFW](https://wiki.debian.org/Uncomplicated%20Firewall%20%28ufw%29)
     - [Fail2Ban](https://www.fail2ban.org)
     - [Docker](https://www.docker.com/)
-      - [Ouroboros](https://github.com/pyouroboros/ouroboros)
+      - [Watchtower](https://github.com/containrrr/watchtower)
+      - [SpaceXLaunchBot](https://github.com/SpaceXLaunchBot)
       - [Caddy](https://caddyserver.com/) as a reverse proxy with https
         - [messenger stats](https://messenger.simonj.dev)
         - [goStatic](https://github.com/PierreZ/goStatic) serving `site/public`
