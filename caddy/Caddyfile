@@ -22,3 +22,11 @@ spacexlaunchbot.dev {
   }
   reverse_proxy spacexlaunchbot-webserver:8080
 }
+
+podcasts.simonj.dev {
+  log {
+    output file /var/log/caddy/podcasts.simonj.dev.access.log
+  }
+  root * /podcasts
+  file_server
+}

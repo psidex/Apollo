@@ -67,10 +67,12 @@ docker run -d --name msserver \
     --network proxynet \
     psidex/messengerstats
 
+# FIXME: home/simon/servermeta/p2p/podcasts is very specific to my setup.
 docker run -d --name caddy --restart unless-stopped \
     -p 80:80 -p 443:443 \
     -v $(pwd)/caddy/Caddyfile:/etc/caddy/Caddyfile \
     -v $(pwd)/caddy/log:/var/log/caddy \
+    -v /home/simon/servermeta/p2p/podcasts:/podcasts \
     -v caddy:/data \
     --network proxynet \
     caddy
